@@ -33,5 +33,14 @@ namespace BreadNBun
             this.Top = 0;
             this.Left = 0;
         }
+
+        private void manageProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProduct frmProduct = new FrmProduct();
+            frmProduct.TopLevel = false;
+            panel3.Controls.Add(frmProduct);
+            frmProduct.BringToFront();
+            frmProduct.Show();
+        }
     }
 }

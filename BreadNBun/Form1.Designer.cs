@@ -34,11 +34,11 @@
             this.dATAENTRYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRANSACTIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.pURCHASEORDERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.mAINTENANCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -85,20 +85,39 @@
             this.dATAENTRYToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageProductToolStripMenuItem});
             this.dATAENTRYToolStripMenuItem.Name = "dATAENTRYToolStripMenuItem";
-            this.dATAENTRYToolStripMenuItem.Size = new System.Drawing.Size(108, 78);
+            this.dATAENTRYToolStripMenuItem.Size = new System.Drawing.Size(85, 78);
             this.dATAENTRYToolStripMenuItem.Text = "DATA ENTRY";
             // 
             // manageProductToolStripMenuItem
             // 
             this.manageProductToolStripMenuItem.Name = "manageProductToolStripMenuItem";
-            this.manageProductToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.manageProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageProductToolStripMenuItem.Text = "Manage Product";
+            this.manageProductToolStripMenuItem.Click += new System.EventHandler(this.manageProductToolStripMenuItem_Click);
             // 
             // tRANSACTIONToolStripMenuItem
             // 
             this.tRANSACTIONToolStripMenuItem.Name = "tRANSACTIONToolStripMenuItem";
-            this.tRANSACTIONToolStripMenuItem.Size = new System.Drawing.Size(101, 78);
+            this.tRANSACTIONToolStripMenuItem.Size = new System.Drawing.Size(81, 78);
             this.tRANSACTIONToolStripMenuItem.Text = "INVENTORY";
+            // 
+            // pURCHASEORDERToolStripMenuItem
+            // 
+            this.pURCHASEORDERToolStripMenuItem.Name = "pURCHASEORDERToolStripMenuItem";
+            this.pURCHASEORDERToolStripMenuItem.Size = new System.Drawing.Size(118, 78);
+            this.pURCHASEORDERToolStripMenuItem.Text = "PURCHASE ORDER";
+            // 
+            // mAINTENANCEToolStripMenuItem
+            // 
+            this.mAINTENANCEToolStripMenuItem.Name = "mAINTENANCEToolStripMenuItem";
+            this.mAINTENANCEToolStripMenuItem.Size = new System.Drawing.Size(102, 78);
+            this.mAINTENANCEToolStripMenuItem.Text = "MAINTENANCE";
+            // 
+            // lOGOUTToolStripMenuItem
+            // 
+            this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
+            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(65, 78);
+            this.lOGOUTToolStripMenuItem.Text = "LOGOUT";
             // 
             // label1
             // 
@@ -107,15 +126,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 23);
+            this.label1.Size = new System.Drawing.Size(198, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bread \'n Bun Inventory System";
-            // 
-            // pURCHASEORDERToolStripMenuItem
-            // 
-            this.pURCHASEORDERToolStripMenuItem.Name = "pURCHASEORDERToolStripMenuItem";
-            this.pURCHASEORDERToolStripMenuItem.Size = new System.Drawing.Size(148, 78);
-            this.pURCHASEORDERToolStripMenuItem.Text = "PURCHASE ORDER";
             // 
             // panel3
             // 
@@ -125,21 +138,9 @@
             this.panel3.Size = new System.Drawing.Size(1233, 551);
             this.panel3.TabIndex = 1;
             // 
-            // mAINTENANCEToolStripMenuItem
-            // 
-            this.mAINTENANCEToolStripMenuItem.Name = "mAINTENANCEToolStripMenuItem";
-            this.mAINTENANCEToolStripMenuItem.Size = new System.Drawing.Size(126, 78);
-            this.mAINTENANCEToolStripMenuItem.Text = "MAINTENANCE";
-            // 
-            // lOGOUTToolStripMenuItem
-            // 
-            this.lOGOUTToolStripMenuItem.Name = "lOGOUTToolStripMenuItem";
-            this.lOGOUTToolStripMenuItem.Size = new System.Drawing.Size(79, 78);
-            this.lOGOUTToolStripMenuItem.Text = "LOGOUT";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1233, 633);
             this.ControlBox = false;
