@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreadNBun", "BreadNBun\BreadNBun.csproj", "{45815CC7-19EE-4756-BE87-F1DE17FE5FC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45815CC7-19EE-4756-BE87-F1DE17FE5FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45815CC7-19EE-4756-BE87-F1DE17FE5FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45815CC7-19EE-4756-BE87-F1DE17FE5FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45815CC7-19EE-4756-BE87-F1DE17FE5FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF196D4E-8F93-4B3F-98ED-17145E9B50EF}
+	EndGlobalSection
+EndGlobal
