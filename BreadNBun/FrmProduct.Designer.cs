@@ -43,6 +43,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCreateNew = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.tbOnHand = new System.Windows.Forms.TextBox();
+            this.tbCriticalLimit = new System.Windows.Forms.TextBox();
+            this.tbWholesale = new System.Windows.Forms.TextBox();
+            this.tbRetail = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tbUnitPrice = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbUnit = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
@@ -55,26 +75,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tbUnitPrice = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tbRetail = new System.Windows.Forms.TextBox();
-            this.tbWholesale = new System.Windows.Forms.TextBox();
-            this.tbCriticalLimit = new System.Windows.Forms.TextBox();
-            this.tbOnHand = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnCreateNew = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,7 +100,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1038, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 20);
+            this.label1.Size = new System.Drawing.Size(24, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -112,7 +112,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
+            this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "PRODUCT";
             // 
@@ -142,6 +142,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(16, 22);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(381, 331);
             this.dataGridView1.TabIndex = 4;
@@ -149,36 +150,44 @@
             // Col1
             // 
             this.Col1.HeaderText = "No.";
+            this.Col1.MinimumWidth = 6;
             this.Col1.Name = "Col1";
+            this.Col1.Width = 125;
             // 
             // Col2
             // 
             this.Col2.HeaderText = "SKU CODE";
+            this.Col2.MinimumWidth = 6;
             this.Col2.Name = "Col2";
+            this.Col2.Width = 125;
             // 
             // Col3
             // 
             this.Col3.HeaderText = "SKU NAME";
+            this.Col3.MinimumWidth = 6;
             this.Col3.Name = "Col3";
+            this.Col3.Width = 125;
             // 
             // Col4
             // 
             this.Col4.HeaderText = "QUANTITY";
+            this.Col4.MinimumWidth = 6;
             this.Col4.Name = "Col4";
+            this.Col4.Width = 125;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(83, 381);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 23);
+            this.comboBox1.Size = new System.Drawing.Size(219, 28);
             this.comboBox1.TabIndex = 3;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(78, 431);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 23);
+            this.textBox1.Size = new System.Drawing.Size(224, 27);
             this.textBox1.TabIndex = 2;
             // 
             // label4
@@ -188,7 +197,7 @@
             this.label4.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label4.Location = new System.Drawing.Point(13, 437);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
+            this.label4.Size = new System.Drawing.Size(63, 23);
             this.label4.TabIndex = 1;
             this.label4.Text = "Search";
             // 
@@ -199,7 +208,7 @@
             this.label3.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label3.Location = new System.Drawing.Point(13, 381);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.Size = new System.Drawing.Size(84, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Category";
             // 
@@ -247,13 +256,229 @@
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(662, 483);
+            this.tabPage1.Size = new System.Drawing.Size(662, 478);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "0.00";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(481, 413);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(85, 23);
+            this.btnCancel.TabIndex = 31;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(390, 413);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 23);
+            this.btnDelete.TabIndex = 33;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(299, 413);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(85, 23);
+            this.btnUpdate.TabIndex = 32;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(208, 413);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(85, 23);
+            this.btnSave.TabIndex = 31;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnCreateNew
+            // 
+            this.btnCreateNew.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnCreateNew.FlatAppearance.BorderSize = 0;
+            this.btnCreateNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateNew.ForeColor = System.Drawing.Color.White;
+            this.btnCreateNew.Location = new System.Drawing.Point(117, 413);
+            this.btnCreateNew.Name = "btnCreateNew";
+            this.btnCreateNew.Size = new System.Drawing.Size(85, 23);
+            this.btnCreateNew.TabIndex = 30;
+            this.btnCreateNew.Text = "Create New";
+            this.btnCreateNew.UseVisualStyleBackColor = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DarkGoldenrod;
+            this.linkLabel1.Location = new System.Drawing.Point(458, 225);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(203, 20);
+            this.linkLabel1.TabIndex = 29;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "[ VIEW UNIT PRICE HISTORY ]";
+            // 
+            // tbOnHand
+            // 
+            this.tbOnHand.Location = new System.Drawing.Point(117, 374);
+            this.tbOnHand.Name = "tbOnHand";
+            this.tbOnHand.Size = new System.Drawing.Size(329, 27);
+            this.tbOnHand.TabIndex = 28;
+            this.tbOnHand.Text = "0";
+            this.tbOnHand.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tbCriticalLimit
+            // 
+            this.tbCriticalLimit.Location = new System.Drawing.Point(117, 335);
+            this.tbCriticalLimit.Name = "tbCriticalLimit";
+            this.tbCriticalLimit.Size = new System.Drawing.Size(329, 27);
+            this.tbCriticalLimit.TabIndex = 27;
+            this.tbCriticalLimit.Text = "0";
+            this.tbCriticalLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tbWholesale
+            // 
+            this.tbWholesale.Location = new System.Drawing.Point(117, 296);
+            this.tbWholesale.Name = "tbWholesale";
+            this.tbWholesale.Size = new System.Drawing.Size(329, 27);
+            this.tbWholesale.TabIndex = 26;
+            this.tbWholesale.Text = "0.00";
+            this.tbWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tbRetail
+            // 
+            this.tbRetail.Location = new System.Drawing.Point(117, 258);
+            this.tbRetail.Name = "tbRetail";
+            this.tbRetail.Size = new System.Drawing.Size(329, 27);
+            this.tbRetail.TabIndex = 25;
+            this.tbRetail.Text = "0.00";
+            this.tbRetail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(43, 377);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(78, 20);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "ON HAND";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(17, 338);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 20);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "CRITICAL LIMIT";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 299);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(93, 20);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "WHOLESALE";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(63, 261);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 20);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "RETAIL";
+            // 
+            // tbUnitPrice
+            // 
+            this.tbUnitPrice.Location = new System.Drawing.Point(117, 222);
+            this.tbUnitPrice.Name = "tbUnitPrice";
+            this.tbUnitPrice.Size = new System.Drawing.Size(329, 27);
+            this.tbUnitPrice.TabIndex = 20;
+            this.tbUnitPrice.Text = "0.00";
+            this.tbUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(40, 225);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 20);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "UNIT PRICE";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.label10.Location = new System.Drawing.Point(24, 197);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(148, 23);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "COST AND PRICE";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(528, 150);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(49, 23);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "-";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(461, 150);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(49, 23);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "+";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(528, 113);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -273,7 +498,7 @@
             this.cbUnit.FormattingEnabled = true;
             this.cbUnit.Location = new System.Drawing.Point(117, 147);
             this.cbUnit.Name = "cbUnit";
-            this.cbUnit.Size = new System.Drawing.Size(329, 23);
+            this.cbUnit.Size = new System.Drawing.Size(329, 28);
             this.cbUnit.TabIndex = 13;
             // 
             // cbCategory
@@ -281,21 +506,21 @@
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(117, 113);
             this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(329, 23);
+            this.cbCategory.Size = new System.Drawing.Size(329, 28);
             this.cbCategory.TabIndex = 12;
             // 
             // tbSKUName
             // 
             this.tbSKUName.Location = new System.Drawing.Point(311, 76);
             this.tbSKUName.Name = "tbSKUName";
-            this.tbSKUName.Size = new System.Drawing.Size(315, 23);
+            this.tbSKUName.Size = new System.Drawing.Size(315, 27);
             this.tbSKUName.TabIndex = 11;
             // 
             // tbSKUCode
             // 
             this.tbSKUCode.Location = new System.Drawing.Point(117, 76);
             this.tbSKUCode.Name = "tbSKUCode";
-            this.tbSKUCode.Size = new System.Drawing.Size(108, 23);
+            this.tbSKUCode.Size = new System.Drawing.Size(108, 27);
             this.tbSKUCode.TabIndex = 10;
             // 
             // label9
@@ -303,7 +528,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(69, 150);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 15);
+            this.label9.Size = new System.Drawing.Size(42, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "UNIT";
             // 
@@ -312,7 +537,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(40, 116);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 15);
+            this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "CATEGORY";
             // 
@@ -321,7 +546,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(231, 79);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 15);
+            this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 7;
             this.label7.Text = "SKU NAME";
             // 
@@ -330,7 +555,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(40, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 15);
+            this.label6.Size = new System.Drawing.Size(79, 20);
             this.label6.TabIndex = 6;
             this.label6.Text = "SKU CODE";
             // 
@@ -341,248 +566,32 @@
             this.label5.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label5.Location = new System.Drawing.Point(24, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 17);
+            this.label5.Size = new System.Drawing.Size(183, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "BASIC INFORMATION";
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(662, 483);
+            this.tabPage2.Size = new System.Drawing.Size(662, 478);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "PRODUCT MOVEMENT";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(662, 483);
+            this.tabPage3.Size = new System.Drawing.Size(662, 478);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "PURCHASE ORDER LOGS";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(528, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(461, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(528, 150);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 23);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label10.Location = new System.Drawing.Point(24, 197);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 17);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "COST AND PRICE";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(40, 225);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 15);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "UNIT PRICE";
-            // 
-            // tbUnitPrice
-            // 
-            this.tbUnitPrice.Location = new System.Drawing.Point(117, 222);
-            this.tbUnitPrice.Name = "tbUnitPrice";
-            this.tbUnitPrice.Size = new System.Drawing.Size(329, 23);
-            this.tbUnitPrice.TabIndex = 20;
-            this.tbUnitPrice.Text = "0.00";
-            this.tbUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(63, 261);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 15);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "RETAIL";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 299);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 15);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "WHOLESALE";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(17, 338);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 15);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "CRITICAL LIMIT";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(43, 377);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 15);
-            this.label15.TabIndex = 24;
-            this.label15.Text = "ON HAND";
-            // 
-            // tbRetail
-            // 
-            this.tbRetail.Location = new System.Drawing.Point(117, 258);
-            this.tbRetail.Name = "tbRetail";
-            this.tbRetail.Size = new System.Drawing.Size(329, 23);
-            this.tbRetail.TabIndex = 25;
-            this.tbRetail.Text = "0.00";
-            this.tbRetail.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tbWholesale
-            // 
-            this.tbWholesale.Location = new System.Drawing.Point(117, 296);
-            this.tbWholesale.Name = "tbWholesale";
-            this.tbWholesale.Size = new System.Drawing.Size(329, 23);
-            this.tbWholesale.TabIndex = 26;
-            this.tbWholesale.Text = "0.00";
-            this.tbWholesale.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tbCriticalLimit
-            // 
-            this.tbCriticalLimit.Location = new System.Drawing.Point(117, 335);
-            this.tbCriticalLimit.Name = "tbCriticalLimit";
-            this.tbCriticalLimit.Size = new System.Drawing.Size(329, 23);
-            this.tbCriticalLimit.TabIndex = 27;
-            this.tbCriticalLimit.Text = "0";
-            this.tbCriticalLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tbOnHand
-            // 
-            this.tbOnHand.Location = new System.Drawing.Point(117, 374);
-            this.tbOnHand.Name = "tbOnHand";
-            this.tbOnHand.Size = new System.Drawing.Size(329, 23);
-            this.tbOnHand.TabIndex = 28;
-            this.tbOnHand.Text = "0";
-            this.tbOnHand.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.DarkGoldenrod;
-            this.linkLabel1.Location = new System.Drawing.Point(458, 225);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(160, 15);
-            this.linkLabel1.TabIndex = 29;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "[ VIEW UNIT PRICE HISTORY ]";
-            // 
-            // btnCreateNew
-            // 
-            this.btnCreateNew.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnCreateNew.FlatAppearance.BorderSize = 0;
-            this.btnCreateNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateNew.ForeColor = System.Drawing.Color.White;
-            this.btnCreateNew.Location = new System.Drawing.Point(117, 413);
-            this.btnCreateNew.Name = "btnCreateNew";
-            this.btnCreateNew.Size = new System.Drawing.Size(85, 23);
-            this.btnCreateNew.TabIndex = 30;
-            this.btnCreateNew.Text = "Create New";
-            this.btnCreateNew.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(208, 413);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(85, 23);
-            this.btnSave.TabIndex = 31;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(299, 413);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(85, 23);
-            this.btnUpdate.TabIndex = 32;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(390, 413);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(85, 23);
-            this.btnDelete.TabIndex = 33;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(481, 413);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(85, 23);
-            this.btnCancel.TabIndex = 31;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            // 
             // FrmProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1079, 593);
             this.ControlBox = false;
@@ -593,7 +602,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmProduct";
-            this.Text = "FrmProduct";
+            this.Text = "Product";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
