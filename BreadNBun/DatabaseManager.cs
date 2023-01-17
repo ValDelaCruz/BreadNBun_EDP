@@ -12,7 +12,7 @@ namespace BreadNBun
     class DatabaseManager
     {
         public static int ErrorCode;
-        static string myConnectionString = "Server=localhost; Database=dbvlf; Uid=root; Pwd=Valdelacruz123";
+        static string myConnectionString = "Server=localhost; Database=dbvlf; Uid=root; Pwd=root12345";
         static MySqlConnection con = new MySqlConnection();
         static MySqlDataAdapter adapter;
 
